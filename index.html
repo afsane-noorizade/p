@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="wwwroot/js/scripttable.js"></script>
+    <style>
+        table{
+            width: 100%;
+        }
+        table, th, td{
+            border: 1px solid pink;
+            text-align: center;
+        }
+        tbody tr:nth-child(2n){
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+   
+    <label>
+        First Name <input id="FirstName">
+    </label>
+    <label>
+        Last Name <input id="LastName">
+    </label>
+    <button type="button" onclick="add()">
+        Add/Update
+    </button>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="myTbody">
+           
+        </tbody>
+    </table>
+
+</body>
+</html>
